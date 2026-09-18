@@ -1,16 +1,16 @@
 ---
-title: "What Is Unix Piping?"
+title: "What Is Redirection?"
 date: 2026-09-18T17:12:28+03:00
 draft: false
 ---
 
-This writeup explains what Unix piping is, and why it *might* look like a pain in the ass but *isn't*.
+This writeup explains what redirection in Linux is.
 
-The thing is, you have seen many programs output stuff. But under the hood, a lot of things are going on.
+The thing is, you have seen many programs simply output stuff. But under the hood, a lot of things are happening.
 
 Well, in linux the *text* we see going here and there, are basically divided into *input*, *output* and *error*.
 
-Why? Well this is because under the hood, a simple program might be doing complex things and an out put which was supposed to be printed to the user as an *error* might be printed as an input for the program. I mean how would the program kknow that some text you enter in the terminal is to be treated as input, and some as output and so on? Well this is why these different channels, specifically input, output and error are needed. In this writeup I'll be focusing not on how the computer knows which is what in detail, but rather on *how we* can say the computer to treat such and such text as such and such.
+Why? Well this is because sometimes maybe with things such as pipes, one program's output becomes the next program's input — and if errors travelled on the same channel as output, the error text would get fed into the next program as if it were data. Well this is why these different channels, specifically input, output and error are needed. In this writeup I'll be focusing not on how the computer knows which is what in detail, but rather on *how we* can say the computer to treat such and such text as such and such.
 
 Well, to learn how to use the different channels, we need to know what each channel is, even though it's quite obvious.
 
@@ -21,7 +21,7 @@ Well, to learn how to use the different channels, we need to know what each chan
 Now getting to the interesting practical part. How do you say the computer or a program to output such and such or take such and such as input? Well, it's quite simple but useful.
 
 **Input redirect**
-You can redirect some text as input using < , for example, `cat < /etc/hostname` will output `ubuntu-server`, recall that cat takes in only files.
+You can redirect some text as input using < , for example, `cat < /etc/hostname` will output `ubuntu-server`. Here cat is given an input of `/etc/hostname`.
 
 **Output redirect**
 You can redirect something as output by using > , for example, `echo hello > output.txt` and if you `cat < output.txt` you get `hello`.
