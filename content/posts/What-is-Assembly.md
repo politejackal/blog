@@ -1,7 +1,7 @@
 ---
 title: "What Is Assembly?"
 date: 2026-09-27T20:35:33+03:00
-draft: true
+draft: false
 ---
 
 Well, assembly can be said to be the *simplest* programming language you are ever going to find in the world. it is so basic, so basic, that people might find hard to write it. i.e. forgetting to write an obvious command and all.
