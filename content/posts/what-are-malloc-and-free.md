@@ -30,3 +30,9 @@ Here's a golden rule of using malloc, always use the `sizeof()` function instead
 
 `int score = malloc(sizeof(int))`  - this is wrong.
 `int *score = malloc(sizeof(int))` - this is right.
+
+Now using the `free()` function, very simple!
+
+Considering the previous example where we used `malloc` to assign some memory, say we want to delete that memory so we can use it for something else, well, we just use `free(score)`. Now `score` will be equal to `NULL`.
+
+That's it, `malloc` and `free` could be one of the most useful yet simplest functions! ;)
