@@ -1,5 +1,5 @@
 ---
-title: "algorithms - intro"
+title: "Algorithms - Intro"
 date: 2026-09-15T12:38:32+03:00
 draft: false
 ---
