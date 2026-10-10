@@ -10,4 +10,4 @@ So one way to build a hash table is an array of those linked lists. Each linked 
 
 Each element inside the array contains a pointer, and each pointer links to the first node and the first node links to the second and so on, which all then link their respective linked lists.
 
-Hashes might come in handy when you have like almost infinite number of elements, and you might need to narrow down the results. You can use hashes for searching, for example google has almost infinite amount of data, but it still responses within a specific and short amount of time. They are just using hashing.
+Hashes might come in handy when you have like almost infinite number of elements, and you might need to narrow down the results. You can use hashes for searching, for example google has almost infinite amount of data, but it still responses within a specific and short amount of time. They are using hashing too, along with other methods.
