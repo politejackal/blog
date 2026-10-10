@@ -1,10 +1,10 @@
 ---
-title: "Hashes Are Cool"
+title: "Hash Tables"
 date: 2026-10-10T15:30:06+03:00
 draft: false
 ---
 
-What are hashes? A hash table is an array of linked lists! If you are thinking what are linked lists, go check out my previous post!
+What are hash tables? A hash table is an array of linked lists! If you are thinking what are linked lists, go check out my previous post!
 
 So one way to build a hash table is an array of those linked lists. Each linked list is just a part of the array. So like many linked lists.
 
