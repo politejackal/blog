@@ -3,13 +3,10 @@ title: "Hash Tables"
 date: 2026-10-10T15:30:06+03:00
 draft: false
 ---
+The main purpose in life of a hash table: finding things fast. Like a dictionary, you use a key to access its value, instead of searching through the whole bunch. It’s fast, it’s cool.
 
-What are hash tables? One way to build a hash table is an array of linked lists! If you are thinking what are linked lists, go check out my previous post!
+How does it know where to look? A hash function turns the key into a number, and that number tells you which slot in the array to go to.
 
-So the one way to build a hash table is an array of those linked lists. Each linked list is just a part of the array. So like many linked lists.
+One way to build a hash table is an array of linked lists! If you’re wondering what linked lists are, go check out my previous post! Each slot in the array contains a pointer to the first node of a linked list, the first node links to the second, and so on. If two keys end up in the same slot, they just go into the same list.
 
-Each element inside the array contains a pointer, and each pointer links to the first node and the first node links to the second and so on, which all then link their respective linked lists.
-
-Hashes might come in handy when you have like almost infinite number of elements, and you might need to narrow down the results. You can use hashes for searching, for example google has almost infinite amount of data, but it still responses within a specific and short amount of time. They are using hashing too, along with other methods.
-
-Now the main function and purpose in life of hashes. Hashes help in narrowing down results. Like a dictionary, you can use a key to to access it's value, insteaxd of searching throughout the whole bunch. It's fast, it's cool.
+Hash tables come in handy when you have an almost infinite number of items. For example, Google has an enormous amount of data but still responds in a short amount of time. They use hashing too, along with other methods.
