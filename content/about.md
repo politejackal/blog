@@ -5,8 +5,9 @@ draft: false
 ---
 
 
-im going ALL IN, into hacking. vulnerability research, to be precise. starting from zero, writing up my challenges as well as solutions on the way.
+I'm a cybersecurity nerd. I've gone ALL IN, into hacking. Vulnerability research, to be precise.
 
-expect notes on c, python, reverse engineering, and eventually binary exploitation (and maybe more).
+Expect notes on C, python, reverse engineering, and eventually binary exploitation (and more).
 
-reach me @politejackal mostly everywhere (instagram/twitter/hackerone/bugcrowd), except on discord, where is it @thepolitejackal
+Reach me @polite_jackal on Discord & Instagram (I use insta very less tho). 
+Reach me @politejackal on Twitter, BugCrowd, HackerOne & ctftime.org
