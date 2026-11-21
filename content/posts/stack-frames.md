@@ -12,16 +12,12 @@ When you allocate space in assembly, you move the stack pointer into the unused 
 
 To allocate space, you subtract the number of bytes you want from `rsp`. (Note: In x86 assembly, `mov rsp, rsp-8` is not a valid instruction because `mov` cannot perform arithmetic directly like that; you must use `sub` or `lea`). For example:
 
-Code snippet
-
 ```
 sub rsp, 8
 
 ```
 
-Now you have access to eight new bytes which you didn't have before. If you want to clean (zero out) them using a simple byte-by-byte loop (Note: for 8 bytes you would normally just do `mov qword [rsp], 0`, but here is the loop you requested):
-
-Code snippet
+Now you have access to eight new bytes which you didn't have before. If you want to clean (zero out) them using a simple byte-by-byte loop (Note: for 8 bytes you would normally just do `mov qword [rsp], 0`, but here is the loop version):
 
 ```
     mov rcx, 0          ; loop counter / offset
@@ -34,9 +30,10 @@ Code snippet
 ```
 
 Now once you use the space, you need to be sure that you move `rsp` back to where it was before. This step is as important as the subtracting one. If you don't, the `ret` instruction at the end of the function will pop the wrong value instead of the return address, and the program will crash. (Again, `mov` cannot do addition directly, so use `add`). Here's an example:
-Code snippet
 
 ```
 add rsp, 8
 
 ```
+
+Anyway, this was how you access or get more memory in the stack using assembly. Anyway, back to our stack frames, every function has its own stack frame (which holds its local variables), and each new frame goes right above the previous function's local variables at a lower address, with its own space or number of bytes. This is important because at the low level you need to have a picture of how this works so you can really understand and control it in the future!
